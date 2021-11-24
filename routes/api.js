@@ -801,6 +801,33 @@ router.get('/download/apkdl', async(req, res, next) => {
 }
 })
 
+router.get('/download/soundcloud/play', async(req, res, next) => {
+  const apikey = req.query.apikey;
+  const query = req.query.query;
+  
+  if(!query) return res.json(loghandler.notquery)
+  if(!apikey) return res.json(loghandler.notparam)
+  
+  if(listkey.includes(apikey)){
+    fetch(encodeURI(`https://hadi-api.herokuapp.com/api/soundcloud/play?query=${query}`))
+    .then(response => response.json())
+        .then(hasil => {
+
+        var result = hasil.result;
+             res.json({
+                 status : true,
+                 creator : `${creator}`,
+                 result
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+} else {
+  res.json(loghandler.invalidKey)
+}
+})
+
 router.get('/download/apk', async(req, res, next) => {
   const apikey = req.query.apikey;
   const query = req.query.query;
