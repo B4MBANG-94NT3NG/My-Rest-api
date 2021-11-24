@@ -1,542 +1,719 @@
-
+<!-- Hayo Ngapain?:v -->
+<!-- Credit Template By Farhan -->
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Scraper Free Rest Api's">
-  <meta name="author" content="Rey Ganz">
-  <base href="/api">
-  <title>Rey API's</title>
-  <link href="https://i.ibb.co/KytnPXF/fdeb31c677579bb7c3dbda902795eea8.jpg" rel="icon">
-  <link href="https://indrijunanda.github.io/RuangAdmin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://indrijunanda.github.io/RuangAdmin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-  <link href="https://indrijunanda.github.io/RuangAdmin/css/ruang-admin.min.css" rel="stylesheet">
-  <meta property="og:title" content="Rey API's">
-  <meta property="og:description" content="FREE REST API TOOLS & DOWNLOADER ONLINE">
-  <meta property="og:image" content="https://i.ibb.co/KytnPXF/fdeb31c677579bb7c3dbda902795eea8.jpg">
-  <meta property="og:url" content="#">
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/androidstudio.min.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
-</head>
-
-<body id="page-top">
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5fee5a40df060f156a92e37e/1eqth13e6';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
-   <div id="wrapper" >
-	<!-- Sidebar -->
-    <ul class="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar">
-      <a class="sidebar-brand d-flex align-items-center justify-content-center bg-warning" href="/">
-        <div class="sidebar-brand-icon">
-          <img src="https://i.ibb.co/KytnPXF/fdeb31c677579bb7c3dbda902795eea8.jpg">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Rest Api - Sekha</title>
+    <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="vendors/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="vendors/owl-carousel-2/owl.carousel.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="vendors/owl-carousel-2/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7Wk6KnE7aJHUHjpp_wBoDfkeSIOQfSGMmxg&usqp=CAU"><link rel="stylesheet" href="ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.css">
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7Wk6KnE7aJHUHjpp_wBoDfkeSIOQfSGMmxg&usqp=CAU"><link rel="stylesheet" href="ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.css">
+    <script src="ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.js"></script>
+   <meta name="description" content="Sekha - API">
+   <meta property="og:image" content="https://i.pinimg.com/736x/79/c9/b8/79c9b86d37c70a73ff82b236fbb1c40f.jpg">
+   <meta property="og:site_name" content="Sekha API">
+   <meta name="keywords" content="Sekha REST API">
+   <meta name="author" content="Rey">
+  </head>
+  <body>
+  <body id="page-top" onload="getvisitor();">
+    <div class="container-scroller">
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
+          <a class="sidebar-brand brand-logo rounded-circle" href="#"><img src="images/logo1.png" alt="logo" /></a>
+          <a class="sidebar-brand brand-logo-mini" href="#"><img src="images/logo1.png" class="rounded-circle" alt="logo" /></a>
         </div>
-        <div class="sidebar-brand-text mx-3">Rey API's</div>
-      </a>
-      <hr class="sidebar-divider my-0">
-      <li class="nav-item active">
-        <a class="nav-link" href="/api">
-          <i class="fas fa-fw fa-code text-warning"></i>
-          <span class="text-warning">Documentation</span></a>
-      </li>
-      <hr class="sidebar-divider">
-      <div class="sidebar-heading text-warning">
-        Features
-      </div>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstrap"
-          aria-expanded="true" aria-controls="collapseBootstrap">
-          <i class="fas fa-fw fa-arrow-down text-warning"></i>
-          <span class="text-warning">Sosial Media API</span>
-        </a>
-        <div id="collapseBootstrap" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">SosMed Features</h6>
-			<a class="collapse-item text-warning" href="/api/music/joox?query=akad&apikey=apirey" target="_blank" >Joox search</a>
-			<a class="collapse-item text-warning" href="/api/download/ytmp4?url=https://youtu.be/6l5V3BWDcMw&apikey=apirey" target="_blank" >Youtube Video</a>
-			<a class="collapse-item text-warning" href="/api/download/ytmp3?url=https://youtu.be/6l5V3BWDcMw&apikey=apirey" target="_blank" >Youtube Audio</a>
-			<a class="collapse-item text-warning" href="/api/music/spotify?query=akad&apikey=apirey" target="_blank" >Spotify search</a>
-			<a class="collapse-item text-warning" href="/api/yt/playmp3?query=surender&apikey=apirey" target="_blank" >play mp3</a>
-            <a class="collapse-item text-warning" href="/api/yt/playmp4?query=surender&apikey=apirey" target="_blank" >play mp4</a>
-			<a class="collapse-item text-warning" href="/api/yt/search?query=surender&apikey=apirey" target="_blank" >yt search</a>
-            <a class="collapse-item text-warning" href="/api/download/tiktok?url=https://www.tiktok.com/@graciajessicajane/video/6910824586909076738?sender_device=pc&sender_web_id=6911703472580724225&is_from_webapp=v2&apikey=apirey" target="_blank" >Tiktok download</a>
-            <a class="collapse-item text-warning" href="/api/media/twimg?url=/api/download/ig?url=https://www.instagram.com/p/CAAZ1VcA2OA&apikey=apirey" target="_blank" >Instagram download</a>
-            <a class="collapse-item text-warning" href="/api/download/fb?url=https://www.facebook.com/botikaonline/videos/837084093818982&apikey=apirey" target="_blank" >Facebook download</a>
-            <a class="collapse-item text-warning" href="/api/stalk/ig?username=attahalilintar&apikey=apirey" target="_blank" >Stalk Instagram</a>
-			<a class="collapse-item text-warning" href="/api/stalk/tiktok?username=attahalilintar&apikey=apirey" target="_blank" >stalk tiktok</a>
-      <a class="collapse-item text-warning" href="/api/stalk/npm?query=Rey&apikey=apirey" target="_blank" >stalk npm</a>
-      </div>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseForm" aria-expanded="true"
-          aria-controls="collapseForm">
-          <i class="fas fa-fw fa-heading text-warning"></i>
-          <span class="text-warning">Text Pro Me API</span>
-        </a>
-        <div id="collapseForm" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Text Pro Me Features</h6>
-             <a class="collapse-item text-warning" href="/api/textpro/magma?text=reyyy&apikey=apirey" target="_blank" >magma</a>
-<a class="collapse-item text-warning" href="/api/textpro/hallowen-text?text=reyyy&apikey=apirey" target="_blank" >hallowen effect</a>
-<a class="collapse-item text-warning" href="/api/textpro/neon-light?text=reyyy&apikey=apirey" target="_blank" >Neon light</a>
-<a class="collapse-item text-warning" href="/api/textpro/broken-glass?text=reyyy&apikey=apirey" target="_blank" >broken glass</a>
-<a class="collapse-item text-warning" href="/api/textpro/art-papper?text=reyyy&apikey=apirey" target="_blank" >Art papper</a>
-<a class="collapse-item text-warning" href="/api/textpro/glossy?text=reyyy&apikey=apirey" target="_blank" >glossy</a>
-<a class="collapse-item text-warning" href="/api/textpro/water-color?text=reyyy&apikey=apirey" target="_blank" >water color</a>
-<a class="collapse-item text-warning" href="/api/textpro/multi-color?text=reyyy&apikey=apirey" target="_blank" >multi color</a>
-<a class="collapse-item text-warning" href="/api/textpro/neon-devil?text=reyyy&apikey=apirey" target="_blank" >Neon devil</a>
-<a class="collapse-item text-warning" href="/api/textpro/sky-text?text=reyyy&apikey=apirey" target="_blank" >sky text</a>
-<a class="collapse-item text-warning" href="/api/textpro/luxury?text=reyyy&apikey=apirey" target="_blank" >luxury</a>
-<a class="collapse-item text-warning" href="/api/textpro/vintage?text=reyyy&text2=ganzzz&apikey=apirey" target="_blank" >vintage</a>
-<a class="collapse-item text-warning" href="/api/textpro/writing?text=reyyy&apikey=apirey" target="_blank" >Writing</a>
-<a class="collapse-item text-warning" href="/api/textpro/engraved?text=reyyy&apikey=apirey" target="_blank" >Engraved</a>
-<a class="collapse-item text-warning" href="/api/textpro/glue-text?text=reyyy&apikey=apirey" target="_blank" >Glue text</a>
-<a class="collapse-item text-warning" href="/api/textpro/pornhub?text=rey&text2=ganz&apikey=apirey" target="_blank" >porn HUB</a>
-<a class="collapse-item text-warning" href="/api/textpro/holograpic?text=reyyy&apikey=apirey" target="_blank" >holograpic</a>
-<a class="collapse-item text-warning" href="/api/textpro/deluxe-silver?text=reyyy&apikey=apirey" target="_blank" >deluxe silver</a>
-<a class="collapse-item text-warning" href="/api/textpro/fabric?text=reyyy&apikey=apirey" target="_blank" >Fabric</a>
-<a class="collapse-item text-warning" href="/api/textpro/wicker?text=reyyy&apikey=apirey" target="_blank" >wicker</a>
-<a class="collapse-item text-warning" href="/api/textpro/larva?text=reyyy&apikey=apirey" target="_blank" >Larva</a>
-<a class="collapse-item text-warning" href="/api/textpro/toxic-bokeh?text=reyyy&apikey=apirey" target="_blank" >Toxic</a>
-<a class="collapse-item text-warning" href="/api/textpro/stroberi?text=reyyy&apikey=apirey" target="_blank" >strobery</a>
-<a class="collapse-item text-warning" href="/api/textpro/koi?text=reyyy&apikey=apirey" target="_blank" >koi pish</a>
-<a class="collapse-item text-warning" href="/api/textpro/bread?text=reyyy&apikey=apirey" target="_blank" >Bread</a>
-<a class="collapse-item text-warning" href="/api/textpro/horor-blood?text=reyyy&apikey=apirey" target="_blank" >horor blood</a>
-<a class="collapse-item text-warning" href="/api/textpro/honey?text=reyyy&apikey=apirey" target="_blank" >honey</a>
-<a class="collapse-item text-warning" href="/api/textpro/ice?text=reyyy&apikey=apirey" target="_blank" >Ice</a>
-<a class="collapse-item text-warning" href="/api/textpro/rusty?text=reyyy&apikey=apirey" target="_blank" >Rusty effect</a>
-             <a class="collapse-item text-warning" href="/api/textpro/captain?text=Rey&text2=ganz&apikey=apirey" target="_blank" >captain Amerika</a>
-            <a class="collapse-item text-warning" href="/api/textpro/3d-gradient?text=Rey&apikey=apirey" target="_blank" >gradien</a>
-            <a class="collapse-item text-warning" href="/api/textpro/christmas?text=Rey&apikey=apirey" target="_blank" >christmas</a>
-            <a class="collapse-item text-warning" href="/api/textpro/drop-water?text=Rey&apikey=apirey" target="_blank" >drop water</a>
-            <a class="collapse-item text-warning" href="/api/textpro/black-pink?text=Rey&apikey=apirey" target="_blank" >blackpink</a>
-            <a class="collapse-item text-warning" href="/api/textpro/logo-wolf?text=Rey&text2&apikey=apirey" target="_blank" >Logo Wolf</a>
-            <a class="collapse-item text-warning" href="/api/textpro/natural-leavest?text=reyganz&apikey=apirey" target="_blank" >Natural leavest</a>
-            <a class="collapse-item text-warning" href="/api/textpro/logo-wolf2?text=Rey&text2&apikey=apirey" target="_blank" >Logo Wolf 2</a>
-            <a class="collapse-item text-warning" href="/api/textpro/harry-potter?text=Reyganz&apikey=apirey" target="_blank" >Harry Potter</a>
-            <a class="collapse-item text-warning" href="/api/textpro/3dstone?text=Reyganz&apikey=apirey" target="_blank" >3D stone</a>
-            <a class="collapse-item text-warning" href="/api/textpro/1917?text=Reyganz&apikey=apirey" target="_blank" >1917</a>
-            <a class="collapse-item text-warning" href="/api/textpro/thunder2?text=reyganz&apikey=apirey" target="_blank" >Thunder 2</a>
-            <a class="collapse-item text-warning" href="/api/textpro/space?text=Rey&text2=ganz&apikey=apirey" target="_blank" >Space</a>
-            <a class="collapse-item text-warning" href="/api/textpro/joker-logo?text=Reyganz&apikey=apirey" target="_blank" >Joker logo</a>
-            <a class="collapse-item text-warning" href="/api/textpro/hallowen?text=Reyganz&apikey=apirey" target="_blank" >hallowen</a>
-            <a class="collapse-item text-warning" href="/api/textpro/blood?text=Reyganz&apikey=apirey" target="_blank" >Blood text</a>
-            <a class="collapse-item text-warning" href="/api/textpro/astone?text=Reyganz&apikey=apirey" target="_blank" >Astone</a>
-            <a class="collapse-item text-warning" href="/api/textpro/grafity-text?text=reyyy&apikey=apirey" target="_blank" >Grafity text</a>
-            <a class="collapse-item text-warning" href="/api/textpro/grafity-text2?text=reyyy&text2=ganz&apikey=apirey" target="_blank" >Grafity text2</a>
-            <a class="collapse-item text-warning" href="/api/textpro/ninja-logo?text=reyyy&text2=ganzzz&apikey=apirey" target="_blank" >Ninja logo</a>
-            <a class="collapse-item text-warning" href="/api/textpro/lion-logo?text=reyyy&text2=ganzz&apikey=apirey" target="_blank" >lion logo</a>
-            <a class="collapse-item text-warning" href="/api/textpro/avengers-logo?text=rey&text2=ganz&apikey=apirey" target="_blank" >Avengers</a>
-            <a class="collapse-item text-warning" href="/api/textpro/marvel-logo2?text=Rey&text2=ganz" target="_blank" >Marvel studio</a>
-
-        </div>
-        </div>
-      </li>
-	  <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseEdu" aria-expanded="true"
-          aria-controls="collapseEdu">
-          <i class="fas fa-fw fa-book text-warning"></i>
-          <span class="text-warning">others maker API</span>
-        </a>
-        <div id="collapseEdu" class="collapse" aria-labelledby="headingEdu" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">others maker</h6>
-                        <a class="collapse-item text-warning" href="/api/maker/harta-tahta?text=reyganz&apikey=apirey" target="_blank" >harta tahta</a>
-                        <a class="collapse-item text-warning" href="/api/maker/silverbutton?text=reyganz&apikey=apirey" target="_blank" >silver button (by vinz)</a>
-                        <a class="collapse-item text-warning" href="/api/maker/goldbutton?text=reyganz&apikey=apirey" target="_blank" >gold button (by vinz)</a>
-                        <a class="collapse-item text-warning" href="/api/maker/nulis?text=reyganz&apikey=apirey" target="_blank" >nulis buku</a>
-                        <a class="collapse-item text-warning" href="/api/maker/emoji2png?text=😅&apikey=apirey" target="_blank" >emoji 2png</a>
-          </div>
-        </div>
-      </li>
-	  <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFlam" aria-expanded="true"
-          aria-controls="collapseFlam">
-          <i class="fas fa-fw fa-bold text-warning"></i>
-          <span class="text-warning">Photoxry API</span>
-        </a>
-        <div id="collapseFlam" class="collapse" aria-labelledby="headingFlam" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Photoxry Features</h6>
-                        <a class="collapse-item text-warning" href="/api/photooxy/army?text=reyganz&apikey=apirey" target="_blank" >Army text</a>
-                        <a class="collapse-item text-warning" href="/api/maker/matrix?text=rey&apikey=apirey" target="_blank" >matrix</a>
-                        <a class="collapse-item text-warning" href="/api/maker/pubglogo?text1=rey&text2=ganz&apikey=apirey" target="_blank" >PUBG</a>
-                        <a class="collapse-item text-warning" href="/api/maker/breakwall?text=rey&apikey=apirey" target="_blank" >breakwall</a>
-                        <a class="collapse-item text-warning" href="/api/photooxy/butterfly?text=rey&apikey=apirey" target="_blank" >butterfly</a>
-                        <a class="collapse-item text-warning" href="/api/photooxy/naruto?text1=rey&apikey=apirey" target="_blank" >naruto</a>
-                        <a class="collapse-item text-warning" href="/api/photooxy/smoke?text1=rey&apikey=apirey" target="_blank" >smoke text</a> 
-                        <a class="collapse-item text-warning" href="/api/photooxy/burn-papper?text=rey&apikey=apirey" target="_blank" >burn papper</a>
-                        <a class="collapse-item text-warning" href="/api/photooxy/love-message?text=rey&apikey=apirey" target="_blank" >love message</a>
-                        <a class="collapse-item text-warning" href="/api/photooxy/love-text?text=rey&apikey=apirey" target="_blank" >love text</a>
-                        <a class="collapse-item text-warning" href="/api/photooxy/coffe-cup?text=rey&apikey=apirey" target="_blank" >coffe cup</a>
-                        <a class="collapse-item text-warning" href="/api/photooxy/double-heart?text=rey&apikey=apirey" target="_blank" >double heart</a>
-                        <a class="collapse-item text-warning" href="/api/photooxy/glitch?text=rey&text2=ganz&apikey=apirey" target="_blank" >glitch effect</a>
-                        <a class="collapse-item text-warning" href="/api/photooxy/message-under-grass?text=rey&apikey=apirey" target="_blank" >message under grass</a>                                     
-           </div>
-        </div>
-      </li>
-	  <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAnime" aria-expanded="true"
-          aria-controls="collapseAnime">
-          <i class="fas fa-fw fa-bullseye text-warning"></i>
-          <span class="text-warning">Wibu API & Wibu Nsfw</span>
-        </a>
-        <div id="collapseAnime" class="collapse" aria-labelledby="headingAnime" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Wiboe Features</h6>
-                        <a class="collapse-item text-warning" href="/api/wallpaper/nsfwloli?apikey=apirey" target="_blank" >Nswf loli</a>
-                        <a class="collapse-item text-warning" href="/api/wallpaper/shota?apikey=apirey" target="_blank" >anime elaina</a>
-			<a class="collapse-item text-warning" href="/api/wallpaper/elaina?apikey=apirey" target="_blank" >anime elaina</a>
-                        <a class="collapse-item text-warning" href="/api/wallpaper/yuri?apikey=apirey" target="_blank" >anime yuri</a>
-                        <a class="collapse-item text-warning" href="/api/wallpaper/loli?apikey=apirey" target="_blank" >anime loli</a>
-                        <a class="collapse-item text-warning" href="/api/wallpaper/hinata?apikey=apirey" target="_blank" >anime hinata</a>
-             </div>
-        </div>
-      </li>
-      <hr class="sidebar-divider">
-    </ul>
-    <!-- Sidebar -->
-    <div id="content-wrapper" class="d-flex flex-column">
-      <div id="content">
-        <!-- TopBar -->
-        <nav class="navbar navbar-expand navbar-light bg-navbar topbar mb-4 static-top bg-warning">
-          <button id="sidebarToggleTop" class="btn btn-link rounded-circle mr-3">
-            <i class="fa fa-bars"></i>
-          </button>
-          <ul class="navbar-nav ml-auto">
-            
-            <div class="topbar-divider d-none d-sm-block"></div>
-<li class="nav-item dropdown no-arrow mx-1">
-<a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="alertsDropdown" role="button">
-<i class="fas fa-bell fa-fw"></i>
-<span class="badge badge-danger badge-counter">3+</span>
-</a>
-<div aria-labelledby="alertsDropdown" class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in">
-<h6 class="dropdown-header">
-                  Alerts Center
-                </h6>
-<a class="dropdown-item d-flex align-items-center">
-<div class="mr-3">
-<div class="icon-circle bg-warning">
-<i class="fas fa-file-alt text-white"></i>
-</div>
-</div>
-<div>
-<div class="small text-gray-500">Agustus 25, 2021</div>
-Online APi's Tools is finishing
-</div>
-</a>
-<a class="dropdown-item d-flex align-items-center">
-<div class="mr-3">
-<div class="icon-circle bg-warning">
-<i class="fas fa-exclamation-triangle text-white"></i>
-</div>
-</div>
-<div>
-<div class="small text-gray-500">Agustus 25, 2021</div>
-Report if there are errors on this website to Admin
-</div>
-</a>
-<a class="dropdown-item d-flex align-items-center">
-<div class="mr-3">
-<div class="icon-circle bg-warning">
-<i class="fas fa-podcast text-white"></i>
-</div>
-</div>
-<div>
-<div class="small text-gray-500">Agustus 1, 2021</div>
-Apikey UNLIMITED! List key apirey&ditofficial
-</div>
-</a>
-<!-- <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a> -->
-</div>
-</li>
-            <li class="nav-item dropdown no-arrow">
-              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                <img class="img-profile rounded-circle" src="https://i.ibb.co/KytnPXF/fdeb31c677579bb7c3dbda902795eea8.jpg" style="max-width: 100px">
-                <span class="ml-2 d-none d-lg-inline text-white small">Rey API</span>
-              </a>
-            </li>
+       <font face="Original Surfer">
+        <ul class="nav">
+          <li class="nav-item profile">
+            <div class="profile-desc">
+              <div class="profile-pic">
+                <div class="count-indicator">
+                  <img class="img-xs rounded-circle " src="https://i.ibb.co/YDYS80p/zero.jpg" alt="">
+                  <span class="count bg-success"></span>
+                </div>
+                <div class="profile-name">
+                  <h5 class="mb-0 font-weight-normal">Rey sekha</h5>
+                  <span>Mangan, turu, macul, micek</span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item nav-category">
+            <span class="nav-link">Docs</span>
+          </li>
+          <li class="nav-item menu-items">
+          <a class="nav-link" href="#">
+          <span class="menu-icon">
+          <i class="mdi mdi-home"></i>
+          </span>
+          <span class="menu-title">Home</span>
+          </a>
+          </li>
+          <li class="nav-item menu-items">
+          <a class="nav-link" data-toggle="collapse" href="#ui-downloader" aria-expanded="false" aria-controls="ui-downloader">
+          <span class="menu-icon">
+          <i class="mdi mdi-download"></i>
+          </span>
+          <span class="menu-title">Downloader API</span>
+          <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="ui-downloader">
+          <ul class="nav flex-column sub-menu">
+         <li class="nav-item"> <a class="nav-link" href="/api/music/joox?query=akad&apikey=APIKEY" target="_blank" >Joox search</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="/api/download/joox3?query=akad&apikey=APIKEY" target="_blank" >Joox search2</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="/api/download/joox2?query=akad&apikey=APIKEY" target="_blank" >Joox Media</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="/api/download/smule?url=https://www.smule.com/recording/lewis-capaldi-someone-you-loved-slower-piano/1112691877_3200708124&apikey=APIKEY" target="_blank" >Smule Download</a></li>
+			        <li class="nav-item"> <a class="nav-link" href="/api/download/ytmp4?url=https://youtu.be/6l5V3BWDcMw&apikey=APIKEY" target="_blank" >Youtube Video</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="/api/download/ytmp42?url=https://youtu.be/6l5V3BWDcMw&apikey=APIKEY" target="_blank" >Youtube Video2</a></li>
+			        <li class="nav-item"> <a class="nav-link" href="/api/download/ytmp3?url=https://youtu.be/6l5V3BWDcMw&apikey=APIKEY" target="_blank" >Youtube Audio</a></li>
+			        <li class="nav-item"> <a class="nav-link" href="/api/download/ytmp32?url=https://youtu.be/6l5V3BWDcMw&apikey=APIKEY" target="_blank" >Youtube Audio2</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="/api/downloader/facebook?url=https://www.facebook.com/botikaonline/videos/837084093818982&apikey=APIKEY" target="_blank" >FB download</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="/api/downloader/fb?url=https://www.facebook.com/100044139564343/posts/375127390635243&apikey=APIKEY" target="_blank" >FB download2</a></li>
+			        <li class="nav-item"> <a class="nav-link" href="/api/music/spotify?query=akad&apikey=APIKEY" target="_blank" >Spotify search</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="/api/downloader/pinterest?q=aeshestic&apikey=APIKEY" target="_blank" >pinterest search</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="/api/download/unplash?q=good night&apikey=APIKEY" target="_blank" >unplash search</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="/api/download/sticker?q=patrick&apikey=APIKEY" target="_blank" >stickerWA search</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="/api/download/stickerline?url=https://store.line.me/stickershop/product/9409/id=APIKEY" target="_blank" >stickerLINE search</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="/api/download/shoppe?q=jaket gunung&apikey=APIKEY" target="_blank" >shoppe search</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="/api/downloader/wallpaperflare?query=anime&apikey=APIKEY" target="_blank" >wallpaperflare search</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="/api/download/googleimg?query=kucing&apikey=APIKEY" target="_blank" >google img search</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="/api/download/apk?query=whatsapp&apikey=APIKEY" target="_blank" >Apk search</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="/api/download/apkdl?url=URL_NYA&apikey=APIKEY" target="_blank" >Apk download</a></li>
+			        <li class="nav-item"> <a class="nav-link" href="/api/yt/playmp3?query=surender&apikey=APIKEY" target="_blank" >play mp3</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="/api/yt/playmp4?query=surender&apikey=APIKEY" target="_blank" >play mp4</a></li>
+			       <li class="nav-item"> <a class="nav-link" href="/api/yt/search?query=surender&apikey=APIKEY" target="_blank" >yt search</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="/api/download/tiktok?url=https://vt.tiktok.com/ZSeJ7P56G&apikey=APIKEY" target="_blank" >Tiktok download</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="/api/download/tiktok2?url=https://vt.tiktok.com/ZSeJ7P56G&apikey=APIKEY" target="_blank" >Tiktok download2</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="/api/download/ig?url=https://www.instagram.com/p/CUU8PwHhU-9/?utm_medium=copy_link&apikey=APIKEY" target="_blank" >IG POST download</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="/api/downloader/igtv?url=https://www.instagram.com/tv/CSW1PMohXDm&apikey=APIKEY" target="_blank" >IG TV download</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="/api/downloader/igstory?username=attahalilintar&apikey=APIKEY" target="_blank" >IG STORY</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="/api/download/mediafire?url=https://www.mediafire.com/file/v035jsup2d2wp1n/textprome.js/file&apikey=APIKEY" target="_blank" >Mediafire download</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="/api/downloader/twitterimg?url=https://twitter.com/renaldypjs/status/1343516524934438912&apikey=APIKEY" target="_blank" >Twitter img download</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="/api/downloader/twittervid?url=https://twitter.com/weareoneEXO/status/1344811074864914433&apikey=APIKEY" target="_blank" >Twitter vid download</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="/api/stalk/ig?username=_sekhaa&apikey=APIKEY" target="_blank" >Stalk Instagram</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="/api/stalk/ig2?username=_sekhaa&apikey=APIKEY" target="_blank" >Stalk Instagram2</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="/api/stalk/github?username=inirey&apikey=APIKEY" target="_blank" >Stalk Github</a></li>
+			     <li class="collapse-item" target="_blank" href="/api/stalk/tiktok?username=attahalilintar&apikey=APIKEY" target="_blank" >stalk tiktok</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="/api/stalk/npm?query=hx&apikey=APIKEY" target="_blank" >stalk npm</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="/api/downloader/pornhub?query=japan&apikey=APIKEY" target="_blank" >Pornhub search</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="/api/downloader/xnxx?query=japan&apikey=APIKEY" target="_blank" >Xnxx search</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="/api/downloader/xvideo?query=japan&apikey=APIKEY" target="_blank" >Xvideos search</a></li>                             
           </ul>
-        </nav>        
-        <!-- Topbar -->
-
-        <!-- Container Fluid-->
-
-        <div class="container-fluid" id="container-wrapper">
-          <!-- Attention -->
-          <div id="demo" class="alert alert-warning alert-dismissible" role="alert">
-        <script>
-arrBulan = ["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"];
-var txt = "";
-txt += "<p><b>Browser CodeName</b>: " + navigator.appCodeName + "</p>";
-txt += "<p><b>Browser Name</b>: " + navigator.appName + "</p>";
-txt += "<p><b>Cookies Enabled</b>: " + navigator.cookieEnabled + "</p>";
-txt += "<p><b>Browser Online</b>: " + navigator.onLine + "</p>";
-txt += "<p><b>Platform</b>: " + navigator.platform + "</p>";
-txt += "<p><b>User-agent header</b>: " + navigator.userAgent + "</p>";
-var d = new Date();
-const jam = d.getHours();
-const menit = d.getMinutes();
-const detik = d.getSeconds();
-const tgl = d.getDate();
-const bln = d.getMonth();
-const thn = d.getFullYear();
-const bulan = arrBulan[bln]
-document.write(txt)
-document.write("Date : "+ jam +":"+ menit +":"+ detik +"~"+ tgl +"-"+ bulan +"-"+ thn +"<br>Welcome back!")</script>
           </div>
-        
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="card mb-4">
-                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-sm-between">
-                </div>
-                <div class="card-body">
-                  <h6 class="m-0 font-weight-bold text-warning">Example!</h6>
-				<div class="my-2"></div>
-				<code class="text-center"> [ Python ] : </code>
-				<pre>
-				<code class="python">
-from requests import get
-url = get('https://www.reysekha.xyz/api/blablabla').json()
-print(url)
-				</code>
-				</pre>
-				<code class="text-center"> [ PHP ] : </code>
-				<pre>
-				<code class="plain-text">
-$url = 'https://www.reysekha.xyz/api/blabla';
-$curl = curl_init($url);
-curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($curl, CURLOPT_HTTPHEADER, [
- 'Content-Type: application/json'
-]);
-$response = curl_exec($curl);
-curl_close($curl);
-echo $response . PHP_EOL; // appear response
-				</code>
-				</pre>
-				<code class="text-center"> [ Node JS ] : </code>
-				<pre>
-				<code class="javascript">
-const axios = require('axios');
-axios.get('https://www.reysekha.xyz/api/blablabla')
-.then(res => {
-  console.log(res.data)
-})
-.catch(err => {
-  console.log(err)
-})
-				</code>
-				</pre>
-                </div>
-              </div>
-            </div>
-		  
-            <div class="col-lg-6">
-              <div class="card mb-4">
-                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-sm-between">
-                </div>
-                <div class="card-body">
-					<h6 class="m-0 font-weight-bold text-warning">Bantu gan!</h6>
-					<br>
-					<h6 class="m-0 font-weight-bold text-warning"> 
-						Support yo:
-					</h6>
-					<br>
-					<a class="btn btn-warning btn-icon-split" href="https://trakteer.id/erzabot" target="_blank">
-						<span class="icon text-white-50">
-							<i class="fas fa-money-bill">
-							</i>
-						</span>
-						<span class="text">
-							Trakteer
-						</span>
-					</a>
-					<br>
-					<br>
-					<a class="btn btn-warning btn-icon-split" href="https://paypal.me/erzabot" target="_blank">
-						<span class="icon text-white-50">
-							<i class="fas fa-credit-card" aria-hidden="true">
-							</i>
-						</span>
-						<span class="text">
-							Paypal
-						</span>
-					</a>
-					<br>
-					<br>
-					<br>
-					<h6 class="m-0 font-weight-bold text-warning"> 
-						Sosial Media:
-					</h6>
-					<br>
-					<a class="btn btn-warning btn-icon-split" href="https://youtube.com/c/Rey sekha" target="_blank">
-						<span class="icon text-white-50">
-							<i class="fab fa-youtube">
-							</i>
-						</span>
-						<span class="text">
-							Youtube
-						</span>
-					</a>
-					<br>
-					<br>
-					<a class="btn btn-warning btn-icon-split" href="https://instagram.com/_sekhaa" target="_blank">
-						<span class="icon text-white-50">
-							<i class="fab fa-instagram">
-							</i>
-						</span>
-						<span class="text">
-							Instagram
-						</span>
-					</a>
-					<br>
-					<br>
-					<a class="btn btn-warning btn-icon-split" href="https://github.com/inirey" target="_blank">
-						<span class="icon text-white-50">
-							<i class="fab fa-github">
-							</i>
-						</span>
-						<span class="text">
-							Github
-						</span>
-					</a>
-					<br>
-					<br>
-					<a class="btn btn-warning btn-icon-split" href="https://www.reysekha.xyz" target="_blank">
-						<span class="icon text-white-50">
-							<i class="fas fa-rss" aria-hidden="true">
-							</i>
-						</span>
-						<span class="text">
-							Blog
-						</span>
-					</a>
-					<br>
-					<br>
-					<br>
-					<br>
-					<div class="alert alert-warning" role="alert">
-          <!--Row-->
-
-          <!-- Modal Logout -->
-          <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelLogout"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabelLogout">Ohh No!</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <p>Are you sure you want to logout?</p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
-                  <a href="login.html" class="btn btn-primary">Logout</a>
-                </div>
-              </div>
-            </div>
+          </li>
+          <li class="nav-item menu-items">
+          <a class="nav-link" data-toggle="collapse" href="#ui-islamic" aria-expanded="false" aria-controls="ui-islamic">
+          <span class="menu-icon">
+          <i class="mdi mdi-star"></i>
+          </span>
+          <span class="menu-title">Islamic API</span>
+          <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="ui-islamic">
+          <ul class="nav flex-column sub-menu">
+          <li class="nav-item"> <a class="nav-link" href="/api/muslim/asmaulhusna?apikey=APIKEY" target="_blank" >Asmaul Husna</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="/api/muslim/jadwalshalat?kota=banyuwangi&apikey=APIKEY" target="_blank" >jadwal shalat </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="/api/muslim/hadits?kitab=bukhari&nomor=52&apikey=APIKEY" target="_blank" >Hadist sahih</a></li>
+                   <li class="nav-item"> <a class="nav-link" href="/api/muslim/quran?surah=1&ayat=2&apikey=APIKEY" target="_blank" >Al Qur'an</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="/api/muslim/kisahnabi?nabi=muhammad&apikey=APIKEY" target="_blank" >Kisah Nabi</a></li>
+          </ul>
           </div>
+          </li>
+          <li class="nav-item menu-items">
+          <a class="nav-link" data-toggle="collapse" href="#ui-stalker" aria-expanded="false" aria-controls="ui-stalker">
+          <span class="menu-icon">
+          <i class="mdi mdi-chart-bar"></i>
+          </span>
+          <span class="menu-title">Sticker & canvas</span>
+          <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="ui-stalker">
+          <ul class="nav flex-column sub-menu">          
+           <li class="nav-item"> <a class="nav-link"href="/api/maker/ttp?text=Rey&apikey=APIKEY" target="_blank" >TTP maker</a></li>
+           <li class="nav-item"> <a class="nav-link"href="/api/maker/attp?text=Rey&apikey=APIKEY" target="_blank" >ATTP MAKER</a></li>
+           <li class="nav-item"> <a class="nav-link"href="/api/canvas/welcome?username=Reyganz&memberCount=257&gcname=Whatsapp Bot Nodejs&bg=&pp=https://avatars.githubusercontent.com/u/85196372?s=400&u=7ccec6bcffa37e5c4517d9ed53698944070b7063&v=4.jpg&pp=https://avatars.githubusercontent.com/u/85196372?s=400&u=7ccec6bcffa37e5c4517d9ed53698944070b7063&v=4.jpg&gcicon=https://avatars.githubusercontent.com/u/85196372?s=400&u=7ccec6bcffa37e5c4517d9ed53698944070b7063&v=4.jpg&apikey=APIKEY" target="_blank" >Welcome Canvas</a></li>
+                  
+          </ul>
+          </div>
+          </li>
+          <li class="nav-item menu-items">
+          <a class="nav-link" data-toggle="collapse" href="#ui-img-maker" aria-expanded="false" aria-controls="ui-img-maker">
+          <span class="menu-icon">
+          <i class="mdi mdi-folder-multiple-image"></i>
+          </span>
+          <span class="menu-title">Image Maker API</span>
+          <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="ui-img-maker">
+          <ul class="nav flex-column sub-menu">
+          <li class="nav-item"> <a class="nav-link" href="/api/maker/harta-tahta?text=reyganz&apikey=APIKEY" target="_blank" >harta tahta</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="/api/maker/silverbutton?text=reyganz&apikey=APIKEY" target="_blank" >silver button</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="/api/maker/goldbutton?text=reyganz&apikey=APIKEY" target="_blank" >gold button</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="/api/maker/nulis?text=reyganz&apikey=APIKEY" target="_blank" >nulis</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="/api/maker/emoji2png?text=%F0%9F%98%85&apikey=APIKEY" target="_blank" >emoji to png</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="/api/textpro/magma?text=Revita&apikey=APIKEY" target="_blank" >magma</a></li>
+<li class="nav-item"> <a class="nav-link" href="/api/textpro/hallowen-text?text=Revita&apikey=APIKEY" target="_blank" >hallowen effect</a></li>
+<li class="nav-item"> <a class="nav-link" href="/api/textpro/neon-light?text=Revita&apikey=APIKEY" target="_blank" >Neon light</a></li>
+<li class="nav-item"> <a class="nav-link" href="/api/textpro/broken-glass?text=Revita&apikey=APIKEY" target="_blank" >broken glass</a></li>
+<li class="nav-item"> <a class="nav-link" href="/api/textpro/art-papper?text=Revita&apikey=APIKEY" target="_blank" >Art papper</a></li>
+<li class="nav-item"> <a class="nav-link" href="/api/textpro/glossy?text=Revita&apikey=APIKEY" target="_blank" >glossy</a></li>
+<li class="nav-item"> <a class="nav-link" href="/api/textpro/water-color?text=Revita&apikey=APIKEY" target="_blank" >water color</a></li>
+<li class="nav-item"> <a class="nav-link" href="/api/textpro/multi-color?text=Revita&apikey=APIKEY" target="_blank" >multi color</a></li>
+<li class="nav-item"> <a class="nav-link" href="/api/textpro/neon-devil?text=Revita&apikey=APIKEY" target="_blank" >Neon devil</a></li>
+<li class="nav-item"> <a class="nav-link" href="/api/textpro/sky-text?text=Revita&apikey=APIKEY" target="_blank" >sky text</a></li>
+<li class="nav-item"> <a class="nav-link" href="/api/textpro/luxury?text=Revita&apikey=APIKEY" target="_blank" >luxury</a></li>
+<li class="nav-item"> <a class="nav-link" href="/api/textpro/vintage?text=Revita&text2=canszz&apikey=APIKEY" target="_blank" >vintage</a></li>
+<li class="nav-item"> <a class="nav-link" href="/api/textpro/writing?text=Revita&apikey=APIKEY" target="_blank" >Writing</a></li>
+<li class="nav-item"> <a class="nav-link" href="/api/textpro/engraved?text=Revita&apikey=APIKEY" target="_blank" >Engraved</a></li>
+<li class="nav-item"> <a class="nav-link" href="/api/textpro/glue-text?text=Revita&apikey=APIKEY" target="_blank" >Glue text</a></li>
+<li class="nav-item"> <a class="nav-link" href="/api/textpro/pornhub?text=Revita&text2=cans&apikey=APIKEY" target="_blank" >porn HUB</a></li>
+<li class="nav-item"> <a class="nav-link" href="/api/textpro/holograpic?text=Revita&apikey=APIKEY" target="_blank" >holograpic</a></li>
+<li class="nav-item"> <a class="nav-link" href="/api/textpro/deluxe-silver?text=Revita&apikey=APIKEY" target="_blank" >deluxe silver</a></li>
+<li class="nav-item"> <a class="nav-link" href="/api/textpro/fabric?text=Revita&apikey=APIKEY" target="_blank" >Fabric</a></li>
+<li class="nav-item"> <a class="nav-link" href="/api/textpro/wicker?text=Revita&apikey=APIKEY" target="_blank" >wicker</a></li>
+<li class="nav-item"> <a class="nav-link" href="/api/textpro/larva?text=Revita&apikey=APIKEY" target="_blank" >Larva</a></li>
+<li class="nav-item"> <a class="nav-link" href="/api/textpro/toxic-bokeh?text=Revita&apikey=APIKEY" target="_blank" >Toxic</a></li>
+<li class="nav-item"> <a class="nav-link" href="/api/textpro/stroberi?text=Revita&apikey=APIKEY" target="_blank" >strobery</a></li>
+<li class="nav-item"> <a class="nav-link" href="/api/textpro/koi?text=Revita&apikey=APIKEY" target="_blank" >koi pish</a></li>
+<li class="nav-item"> <a class="nav-link" href="/api/textpro/bread?text=Revita&apikey=APIKEY" target="_blank" >Bread</a></li>
+<li class="nav-item"> <a class="nav-link" href="/api/textpro/horor-blood?text=Revita&apikey=APIKEY" target="_blank" >horor blood</a></li>
+<li class="nav-item"> <a class="nav-link" href="/api/textpro/honey?text=Revita&apikey=APIKEY" target="_blank" >honey</a></li>
+<li class="nav-item"> <a class="nav-link" href="/api/textpro/ice?text=Revita&apikey=APIKEY" target="_blank" >Ice</a></li>
+<li class="nav-item"> <a class="nav-link" href="/api/textpro/rusty?text=Revita&apikey=APIKEY" target="_blank" >Rusty effect</a></li>
+             <li class="nav-item"> <a class="nav-link" href="/api/textpro/captain?text=Revita&text2=cans&apikey=APIKEY" target="_blank" >captain Amerika</a></li>
+            <li class="nav-item"> <a class="nav-link" href="/api/textpro/3d-gradient?text=Revita&apikey=APIKEY" target="_blank" >gradien</a></li>
+            <li class="nav-item"> <a class="nav-link" href="/api/textpro/christmas?text=Revita&apikey=APIKEY" target="_blank" >christmas</a></li>
+            <li class="nav-item"> <a class="nav-link" href="/api/textpro/drop-water?text=Revita&apikey=APIKEY" target="_blank" >drop water</a></li>
+            <li class="nav-item"> <a class="nav-link" href="/api/textpro/black-pink?text=Revita&apikey=APIKEY" target="_blank" >blackpink</a></li>
+            <li class="nav-item"> <a class="nav-link" href="/api/textpro/logo-wolf?text=Revita&text2&apikey=APIKEY" target="_blank" >Logo Wolf</a></li>
+            <li class="nav-item"> <a class="nav-link" href="/api/textpro/natural-leavest?text=Revita&apikey=APIKEY" target="_blank" >Natural leavest</a></li>
+            <li class="nav-item"> <a class="nav-link" href="/api/textpro/logo-wolf2?text=Revita&text2&apikey=APIKEY" target="_blank" >Logo Wolf 2</a></li>
+            <li class="nav-item"> <a class="nav-link" href="/api/textpro/harry-potter?text=Revita&apikey=APIKEY" target="_blank" >Harry Potter</a></li>
+            <li class="nav-item"> <a class="nav-link" href="/api/textpro/3dstone?text=Revita&apikey=APIKEY" target="_blank" >3D stone</a></li>
+            <li class="nav-item"> <a class="nav-link" href="/api/textpro/1917?text=Revita&apikey=APIKEY" target="_blank" >1917</a></li>
+            <li class="nav-item"> <a class="nav-link" href="/api/textpro/thunder2?text=Revita&apikey=APIKEY" target="_blank" >Thunder 2</a></li>
+            <li class="nav-item"> <a class="nav-link" href="/api/textpro/space?text=Revita&text2=cans&apikey=APIKEY" target="_blank" >Space</a></li>
+            <li class="nav-item"> <a class="nav-link" href="/api/textpro/joker-logo?text=Revita&apikey=APIKEY" target="_blank" >Joker logo</a></li>
+            <li class="nav-item"> <a class="nav-link" href="/api/textpro/hallowen?text=Revita&apikey=APIKEY" target="_blank" >hallowen</a></li>
+            <li class="nav-item"> <a class="nav-link" href="/api/textpro/blood?text=Revita&apikey=APIKEY" target="_blank" >Blood text</a></li>
+            <li class="nav-item"> <a class="nav-link" href="/api/textpro/astone?text=Revita&apikey=APIKEY" target="_blank" >Astone</a></li>
+            <li class="nav-item"> <a class="nav-link" href="/api/textpro/grafity-text?text=Revita&apikey=APIKEY" target="_blank" >Grafity text</a></li>
+            <li class="nav-item"> <a class="nav-link" href="/api/textpro/grafity-text2?text=Revita&text2=cans&apikey=APIKEY" target="_blank" >Grafity text2</a></li>
+            <li class="nav-item"> <a class="nav-link" href="/api/textpro/ninja-logo?text=Revita&text2=canszz&apikey=APIKEY" target="_blank" >Ninja logo</a></li>
+            <li class="nav-item"> <a class="nav-link" href="/api/textpro/lion-logo?text=Revita&text2=cansz&apikey=APIKEY" target="_blank" >lion logo</a></li>
+            <li class="nav-item"> <a class="nav-link" href="/api/textpro/avengers-logo?text=Revita&text2=cans&apikey=APIKEY" target="_blank" >Avengers</a></li>
+            <li class="nav-item"> <a class="nav-link" href="/api/textpro/marvel-logo2?text=Revita&text2=cans" target="_blank" >Marvel studio</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/api/photooxy/army?text=Revita&apikey=APIKEY" target="_blank" >Army text</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="/api/maker/matrix?text=Revita&apikey=APIKEY" target="_blank" >matrix</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="/api/maker/pubglogo?text1=Revita&text2=cans&apikey=APIKEY" target="_blank" >PUBG</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="/api/maker/breakwall?text=Revita&apikey=APIKEY" target="_blank" >breakwall</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="/api/photooxy/butterfly?text=Revita&apikey=APIKEY" target="_blank" >butterfly</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="/api/photooxy/naruto?text1=Revita&apikey=APIKEY" target="_blank" >naruto</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="/api/photooxy/smoke?text1=Revita&apikey=APIKEY" target="_blank" >smoke text</a></li> 
+                        <li class="nav-item"> <a class="nav-link" href="/api/photooxy/burn-papper?text=Revita&apikey=APIKEY" target="_blank" >burn papper</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="/api/photooxy/love-message?text=Revita&apikey=APIKEY" target="_blank" >love message</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="/api/photooxy/love-text?text=Revita&apikey=APIKEY" target="_blank" >love text</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="/api/photooxy/coffe-cup?text=Revita&apikey=APIKEY" target="_blank" >coffe cup</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="/api/photooxy/double-heart?text=Revita&apikey=APIKEY" target="_blank" >double heart</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="/api/photooxy/glitch?text=Revita&text2=cans&apikey=APIKEY" target="_blank" >glitch effect</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="/api/photooxy/message-under-grass?text=Revita&apikey=APIKEY" target="_blank" >message under grass</a></li>                                                            
+          </ul>
+          </div>
+          </li>
+          <li class="nav-item menu-items">
+          <a class="nav-link" data-toggle="collapse" href="#ui-photooxy" aria-expanded="false" aria-controls="ui-photooxy">
+          <span class="menu-icon">
+          <i class="mdi mdi-folder-image"></i>
+          </span>
+          <span class="menu-title">Random Image</span>
+          <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="ui-photooxy">
+          <ul class="nav flex-column sub-menu">   
+               <li class="nav-item"> <a class="nav-link" href="/api/wallpaper/trans?apikey=APIKEY">wallhp Transformers </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="/api/wallpaper/jeni?apikey=APIKEY">wallhp jeni blpk </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="/api/wallpaper/jiso?apikey=APIKEY">wallhp jisso blpkl </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="/api/wallpaper/cecan2?apikey=APIKEY">wallhp cecan </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="/api/wallpaper/cogan2?apikey=APIKEY">wallhp cogan </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="/api/wallpaper/satanic?apikey=APIKEY">wallhp satanic </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="/api/wallpaper/katakata?apikey=APIKEY">wallhp quotes </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="/api/wallpaper/pentol?apikey=APIKEY">wallhp pentol </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="/api/wallpaper/kartun?apikey=APIKEY">wallhp cartoon </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="/api/wallpaper/tatasurya?apikey=APIKEY">wallhp planet </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="/api/wallpaper/cyberspace?apikey=APIKEY">wallhp cyberspace </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="/api/wallpaper/gaming?apikey=APIKEY">wallhp gaming </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="/api/wallpaper/islami?apikey=APIKEY"> wallhp islami </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="/api/wallpaper/programing?apikey=APIKEY"> wallhp programing </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="/api/wallpaper/teknologi?apikey=APIKEY"> wallhp teknologi </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="/api/wallpaper/mountain?apikey=APIKEY"> wallhp mountain </a></li>
+                             <li class="nav-item"> <a class="nav-link" href="/api/wallpaper/ryujin?apikey=APIKEY" target="_blank" >Random Ryujin ityz</a></li>
+		   <li class="collapse-item" target="_blank" href="/api/wallpaper/rose?apikey=APIKEY" target="_blank" >Random rose blpk</a></li>
+           <li class="nav-item"> <a class="nav-link" href="/api/wallpaper/justina?apikey=APIKEY" target="_blank" >Random justina xie</a></li>
+           <li class="nav-item"> <a class="nav-link" href="/api/wallpaper/random/blackpink?apikey=APIKEY" target="_blank" >Random blackpink</a></li>                        
+           <li class="nav-item"> <a class="nav-link" href="/api/wallpaper/doraemon?apikey=APIKEY" target="_blank" >Random Doraemon</a></li>                      
+           <li class="nav-item"> <a class="nav-link" href="/api/wallpaper/ppcouple?apikey=APIKEY" target="_blank" >Random ppcouple</a></li>
+           <li class="nav-item"> <a class="nav-link" href="/api/wallpaper/kpop?apikey=APIKEY" target="_blank" >Random kpop</a></li>
+           <li class="nav-item"> <a class="nav-link" href="/api/wallpaper/hekel?apikey=APIKEY" target="_blank" >Random hekel</a></li>
+           <li class="nav-item"> <a class="nav-link" href="/api/wallpaper/pubg?apikey=APIKEY" target="_blank" >Random PUBG</a></li>
+           <li class="nav-item"> <a class="nav-link" href="/api/wallpaper/cogan?apikey=APIKEY" target="_blank" >Random cogan</a></li>
+           <li class="nav-item"> <a class="nav-link" href="/api/wallpaper/cecan?apikey=APIKEY" target="_blank" >Random cecan</a></li>
+           <li class="nav-item"> <a class="nav-link" href="/api/wallpaper/aesthetic?apikey=APIKEY" target="_blank" >Random Aesthetic</a></li>
+           <li class="nav-item"> <a class="nav-link" href="/api/wallpaper/wallhp?apikey=APIKEY" target="_blank" >Random wallhp aesthetic</a></li>
+           <li class="nav-item"> <a class="nav-link" href="/api/wallpaper/anime?apikey=APIKEY" target="_blank" >Random wallhp anime</a></li>
+           <li class="nav-item"> <a class="nav-link" href="/api/asupan?apikey=APIKEY" target="_blank" >Random asupan</a></li>
+           <li class="nav-item"> <a class="nav-link" href="/api/wallpaper/kucing?apikey=APIKEY" target="_blank" >Random Kucing</a></li>
+           <li class="nav-item"> <a class="nav-link" href="/api/wallpaper/anjing?apikey=APIKEY" target="_blank" >Random Anjing</a></li>
+          </ul>
+          </div>
+          </li>
+          <li class="nav-item menu-items">
+          <a class="nav-link" data-toggle="collapse" href="#ui-textpro" aria-expanded="false" aria-controls="ui-textpro">
+          <span class="menu-icon">
+          <i class="mdi mdi-lock"></i>
+          </span>
+          <span class="menu-title">Encrypt API</span>
+          <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="ui-textpro">
+          <ul class="nav flex-column sub-menu">
           
-        </div>
-        <!---Container Fluid-->   
-            <!-- Progress bars with multiple bars -->
-            <!--- <div class="col-lg-12">
-              <div class="card mb-4">
-                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-danger">Perjuangan aku ke kalian.</h6>
-                </div>
-                <div class="card-body">
-                  <p>API ini gratis, jadi kalau ada yang error kabarin aja.
-                    <code>.api-aku</code> kasih ke <code>.program-kamu</code></p>
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar"
-                      aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
+          <li class="nav-item"> <a class="nav-link" href="api/tomedia?apikey=Sekha&img=Masukan_Teks_Base64">Base64 To Media</a></li>
+          <li class="nav-item"> <a class="nav-link" href="api/binary?apikey=Sekha&encode=ojan">Binary Encode</a></li>
+          <li class="nav-item"> <a class="nav-link" href="api/binary?apikey=Sekha&decode=encodenya">Binary Decode</a></li>
+          <li class="nav-item"> <a class="nav-link" href="api/base?apikey=Sekha&type=base64&encode=ojanKece">Base64 Encode</a></li>
+          <li class="nav-item"> <a class="nav-link" href="api/base?apikey=Sekha&type=base64&decode=encodenya=">Base64 Decode</a></li>
+          <li class="nav-item"> <a class="nav-link" href="api/base?apikey=Sekha&type=base32&encode=ojanKece">Base32 Encode</a></li>
+          <li class="nav-item"> <a class="nav-link" href="api/base?apikey=Sekha&type=base32&decode=encode nya=">Base32 Decode</a></li>
+          <li class="nav-item"> <a class="nav-link" href="api/md5?apikey=Sekha&text=ojanKece">MD5</a></li>
+          <li class="nav-item"> <a class="nav-link" href="api/createcode?text=KodePolisi09&apikey=Sekha">Code Generator</a></li>
+          <li class="nav-item"> <a class="nav-link" href="api/dork?apikey=Sekha&dork=php.id">pencarian dork</a></li>
+          <li class="nav-item"> <a class="nav-link" href="api/pastebin?apikey=Sekha&text=ojan">pastebin</a></li>
+          </ul>
+          </div>
+          </li>
+          <li class="nav-item menu-items">
+          <a class="nav-link" data-toggle="collapse" href="#ui-fun" aria-expanded="false" aria-controls="ui-fun">
+          <span class="menu-icon">
+          <i class="mdi mdi-emoticon-happy"></i>
+          </span>
+          <span class="menu-title">Fun & game</span>
+          <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="ui-fun">
+          <ul class="nav flex-column sub-menu">
+          	            <li class="nav-item"> <a class="nav-link"href="/api/primbon/artimimpi?text=bangkrut&apikey=APIKEYMU" target="_blank" >Arti mimpi</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/primbon/artinama?text=Rey&apikey=APIKEYMU" target="_blank" >Arti nama</a></li>
+                  <li class="nav-item"> <a class="nav-link"href="/api/fun/simisimi?text=assalamualaikum&apikey=APIKEYMU" target="_blank" >Simi IND</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/fun/simisimi-ind2?text=hallo%20kak&apikey=APIKEYMU" target="_blank" >Simi IND2</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/fun/simisimi2?text=how%20are%20you&apikey=APIKEYMU" target="_blank" >Simi EN</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/fun/simisimi-en2?text=Hi%20friend%20&apikey=APIKEYMU" target="_blank" >Simi EN2</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/fun/simisimi3?text=arigatou&apikey=APIKEYMU" target="_blank" >Simi JPN</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/fun/simisimi-jp2?text=arigatou&apikey=APIKEYMU" target="_blank" >Simi JPN2</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/fun/simisimi4?text=assalamualaikum ya aqhi&apikey=APIKEYMU" target="_blank" >Simi ARB</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/fun/simisimi-ar2?text=la%20tahzan&apikey=APIKEYMU" target="_blank" >Simi ARB2</a></li>
+                                  <li class="nav-item"> <a class="nav-link"href="/api/kuis/tebakGambar?apikey=APIKEY" target="_blank" >Tebak gambar</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/game/tebaklirik?apikey=APIKEY" target="_blank" >Tebak lirik</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/game/tebakkata?apikey=APIKEY" target="_blank" >Tebak kata</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/game/tebakkalimat?apikey=APIKEY" target="_blank" >Tebak kalimat</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/game/tebaktebakan?apikey=APIKEY" target="_blank" >Tebak tebakan</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/game/tebakjenaka?apikey=APIKEY" target="_blank" >Tebak jenaka</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/game/tebakbendera?apikey=APIKEY" target="_blank" >Tebak bendera</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/game/tebakkimia?apikey=APIKEY" target="_blank" >Tebak kimia</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/game/tebakchara?apikey=APIKEY" target="_blank" >Tebak chara</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/kuis/caklontong?apikey=APIKEY" target="_blank" >Cak lontong</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/game/family100?apikey=APIKEY" target="_blank" >family 100</a></li>
+          </ul>
+          </div>
+          </li>
+          <li class="nav-item menu-items">
+          <a class="nav-link" data-toggle="collapse" href="#ui-anime" aria-expanded="false" aria-controls="ui-anime">
+          <span class="menu-icon">
+          <i class="mdi mdi-cat"></i>
+          </span>
+          <span class="menu-title">Anime & Nsfw</span>
+          <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="ui-anime">
+          <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link"href="/api/wallpaper/nsfwloli?apikey=APIKEY" target="_blank" >Nswf loli</a></li>
+                         <li class="nav-item"> <a class="nav-link"href="/api/nsfw/ahegao?apikey=APIKEY" target="_blank" >nsfw ahegao</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/nsfw/ass?apikey=APIKEY" target="_blank" >nsfw ass</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/nsfw/bdsm?apikey=APIKEY" target="_blank" >Nswf bdsm</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/nsfw/blowjob?apikey=APIKEY" target="_blank" >nsfw blowjob</a></li>
+		                 <li class="nav-item"> <a class="nav-link"href="/api/nsfw/cuckold?apikey=APIKEY" target="_blank" >nsfw cuckold</a></li>
+		                 <li class="nav-item"> <a class="nav-link"href="/api/nsfw/cum?apikey=APIKEY" target="_blank" >nsfw cum</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/nsfw/ero?apikey=APIKEY" target="_blank" >nsfw ero</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/nsfw/femdom?apikey=APIKEY" target="_blank" >nsfw femdom</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/nsfw/foot?apikey=APIKEY" target="_blank" >nsfw foot</a></li>
+		                  <li class="nav-item"> <a class="nav-link"href="/api/nsfw/gangbang?apikey=APIKEY" target="_blank" >nsfw gangbanh</a></li>
+		                  <li class="nav-item"> <a class="nav-link"href="/api/nsfw/glasses?apikey=APIKEY" target="_blank" >nsfw glasses</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/nsfw/hentai?apikey=APIKEY" target="_blank" >nsfw hentai</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/nsfw/gifs?apikey=APIKEY" target="_blank" >nsfw gifs</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/nsfw/jahy?apikey=APIKEY" target="_blank" >nsfw jahy</a></li>
+		                  <li class="nav-item"> <a class="nav-link"href="/api/nsfw/manga?apikey=APIKEY" target="_blank" >nsfw manga</a></li>
+		                  <li class="nav-item"> <a class="nav-link"href="/api/nsfw/masturbation?apikey=APIKEY" target="_blank" >nsfw mstb</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/nsfw/neko?apikey=APIKEY" target="_blank" >nsfw neko</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/nsfw/orgy?apikey=APIKEY" target="_blank" >nsfw orgy</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/nsfw/panties?apikey=APIKEY" target="_blank" >nsfw panties</a></li>
+		                  <li class="nav-item"> <a class="nav-link"href="/api/nsfw/pussy?apikey=APIKEY" target="_blank" >nsfw pussy</a></li>
+		                  <li class="nav-item"> <a class="nav-link"href="/api/nsfw/neko2?apikey=APIKEY" target="_blank" >nsfw neko2</a></li>
+		                  <li class="nav-item"> <a class="nav-link"href="/api/nsfw/tentacles?apikey=APIKEY" target="_blank" >nsfw tentacles</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/nsfw/thighs?apikey=APIKEY" target="_blank" >nsfw things</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/nsfw/yuri?apikey=APIKEY" target="_blank" >nsfw yuri</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/nsfw/zettai?apikey=APIKEY" target="_blank" >nsfw zettai</a></li>
+                                     <li class="nav-item"> <a class="nav-link"href="/api/random/cosplay?apikey=APIKEY" target="_blank" >Random Cosplay</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/wallpaper/waifu?apikey=APIKEY" target="_blank" >Waifu</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/wallpaper/waifu2?apikey=APIKEY" target="_blank" >Waifu2</a></li>                       
+<li class="collapse-item" target="_blank" href="/api/wallpaper/shota?apikey=APIKEY" target="_blank" >shota</a></li>
+		          <li class="nav-item"> <a class="nav-link"href="/api/wallpaper/loli?apikey=APIKEY" target="_blank" >anime loli</a></li>
+	             <li class="nav-item"> <a class="nav-link"href="/api/wallpaper/yotsuba?apikey=APIKEY" target="_blank" >Random yotsuba</a></li>
+<li class="collapse-item" target="_blank" href="/api/wallpaper/shinomiya?apikey=APIKEY" target="_blank" >Random shinomiya</a></li>
+<li class="collapse-item" target="_blank" href="/api/wallpaper/yumeko?apikey=APIKEY" target="_blank" >Random yumeko</a></li>
+<li class="collapse-item" target="_blank" href="/api/wallpaper/tejina?apikey=APIKEY" target="_blank" >Random tejina</a></li>
+<li class="collapse-item" target="_blank" href="/api/wallpaper/chiho?apikey=APIKEY" target="_blank" >Random chiho</a></li>
+        <li class="nav-item"> <a class="nav-link"href="/api/wallpaper/boruto?apikey=APIKEY" target="_blank" >Random boruto</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/wallpaper/kaori?apikey=APIKEY" target="_blank" >Random kaori</a></li>
+<li class="collapse-item" target="_blank" href="/api/wallpaper/shizuka?apikey=APIKEY" target="_blank" >Random shizuka</a></li>
+<li class="collapse-item" target="_blank" href="/api/wallpaper/kaga?apikey=APIKEY" target="_blank" >Random kaga</a></li>
+<li class="collapse-item" target="_blank" href="/api/wallpaper/kotori?apikey=APIKEY" target="_blank" >Random kotori</a></li>
+<li class="collapse-item" target="_blank" href="/api/wallpaper/mikasa?apikey=APIKEY" target="_blank" >Random mikasa</a></li>
+<li class="collapse-item" target="_blank" href="/api/wallpaper/akiyama?apikey=APIKEY" target="_blank" >Random akiyama</a></li>
+<li class="collapse-item" target="_blank" href="/api/wallpaper/gremory?apikey=APIKEY" target="_blank" >Random gremory</a></li>
+<li class="collapse-item" target="_blank" href="/api/wallpaper/isuzu?apikey=APIKEY" target="_blank" >Random isuzu</a></li>
+<li class="collapse-item" target="_blank" href="/api/wallpaper/shina?apikey=APIKEY" target="_blank" >Random shina</a></li>
+<li class="collapse-item" target="_blank" href="/api/wallpaper/kagura?apikey=APIKEY" target="_blank" >Random kagura</a></li>
+<li class="collapse-item" target="_blank" href="/api/wallpaper/shinka?apikey=APIKEY" target="_blank" >Random shinka</a></li>
+<li class="collapse-item" target="_blank" href="/api/wallpaper/eba?apikey=APIKEY" target="_blank" >Random eba</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/wallpaper/elaina?apikey=APIKEY" target="_blank" >Random elaina</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/wallpaper/yuri?apikey=APIKEY" target="_blank" >Random yuri</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/wallpaper/erza?apikey=APIKEY" target="_blank" >Random erza</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/wallpaper/hinata?apikey=APIKEY" target="_blank" >Random hinata</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/wallpaper/minato?apikey=APIKEY" target="_blank" >Random minato</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/wallpaper/naruto?apikey=APIKEY" target="_blank" >Random Naruto</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/wallpaper/sagiri?apikey=APIKEY" target="_blank" >Random Sagiri</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/wallpaper/nezuko?apikey=APIKEY" target="_blank" >Random nezuko</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/wallpaper/rize?apikey=APIKEY" target="_blank" >Random rize</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/wallpaper/ana?apikey=APIKEY" target="_blank" >Random Anna</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/wallpaper/deidara?apikey=APIKEY" target="_blank" >Random Deidara</a></li>
+<li class="collapse-item" target="_blank" href="/api/wallpaper/yuki?apikey=APIKEY" target="_blank" >Random Yuki</a></li>
+<li class="collapse-item" target="_blank" href="/api/wallpaper/ana?apikey=APIKEY" target="_blank" >Random Anna</a></li>
+<li class="collapse-item" target="_blank" href="/api/wallpaper/asuna?apikey=APIKEY" target="_blank" >Random Asuna</a></li>
+<li class="collapse-item" target="_blank" href="/api/wallpaper/ayuzawa?apikey=APIKEY" target="_blank" >Random Ayuzawa</a></li>
+<li class="collapse-item" target="_blank" href="/api/wallpaper/chitoge?apikey=APIKEY" target="_blank" >Random Chitoge</a></li>
+<li class="collapse-item" target="_blank" href="/api/wallpaper/emilia?apikey=APIKEY" target="_blank" >Random Emilia</a></li>
+<li class="collapse-item" target="_blank" href="/api/wallpaper/hestia?apikey=APIKEY" target="_blank" >Random hestia</a></li>
+<li class="collapse-item" target="_blank" href="/api/wallpaper/inori?apikey=APIKEY" target="_blank" >Random inori</a></li>
+<li class="collapse-item" target="_blank" href="/api/wallpaper/itachi?apikey=APIKEY" target="_blank" >Random itachi</a></li>
+<li class="collapse-item" target="_blank" href="/api/wallpaper/madara?apikey=APIKEY" target="_blank" >Random Madara</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/wallpaper/sakura?apikey=APIKEY" target="_blank" >Random sakura</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/wallpaper/sasuke?apikey=APIKEY" target="_blank" >Random Sasuke</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/wallpaper/tsunade?apikey=APIKEY" target="_blank" >Random Tsunade</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/wallpaper/onepiece?apikey=APIKEY" target="_blank" >Random one piece</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/wallpaper/mobil?apikey=APIKEY" target="_blank" >Random mobil</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/wallpaper/montor?apikey=APIKEY" target="_blank" >Random montor</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/wallpaper/boneka-chucky?apikey=APIKEY" target="_blank" >Random boneka chucky</a></li>
+                                                  <li class="nav-item"> <a class="nav-link"href="/api/wallpaper/keneki?apikey=APIKEY" target="_blank" >Random keneki</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/wallpaper/megumin?apikey=APIKEY" target="_blank" >Random Megumin</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/wallpaper/toukachan?apikey=APIKEY" target="_blank" >Random toukachan</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/wallpaper/akira?apikey=APIKEY" target="_blank" >Random akira</a></li>
+		                  <li class="nav-item"> <a class="nav-link"href="/api/wallpaper/itori?apikey=APIKEY" target="_blank" >Random itori</a></li>
+		                  <li class="nav-item"> <a class="nav-link"href="/api/wallpaper/kurumi?apikey=APIKEY" target="_blank" >Random kurumi</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/wallpaper/miku?apikey=APIKEY" target="_blank" >Random miku</a></li>
+                          <li class="nav-item"> <a class="nav-link"href="/api/wallpaper/pokemon?apikey=APIKEY" target="_blank" >Random pokemon</a></li>
+          </ul>
+          </div>
+          </li>
+          <li class="nav-item nav-category">
+          <span class="nav-link">Contact Me</span>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="https://github.com/inirey">
+              <span class="menu-icon">
+                <i class="mdi mdi-github-circle"></i>
+              </span>
+              <span class="menu-title">Github</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="https://wa.me/6285157740529">
+              <span class="menu-icon">
+                <i class="mdi mdi-whatsapp"></i>
+              </span>
+              <span class="menu-title">WhatsApp</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="https://saweria.co/Sekha">
+              <span class="menu-icon">
+                <i class="mdi mdi-saweria"></i>
+              </span>
+              <span class="menu-title">Donasi</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="https://instagram.com/_sekhaa">
+              <span class="menu-icon">
+                <i class="mdi mdi-instagram"></i>
+              </span>
+              <span class="menu-title">Instagram</span>
+            </a>
+          </li>
+        </ul>
+       </font>
+      </nav>
+      <div class="container-fluid page-body-wrapper">
+        <nav class="navbar p-0 fixed-top d-flex flex-row">
+          <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
+            <a class="navbar-brand brand-logo-mini" href="index.html"><big><i class="mdi mdi-biohazard text-primary"></i></big></a>
+          </div>
+          <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+            <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+              <span class="mdi mdi-menu"></span>
+            </button>
+            <ul class="navbar-nav w-100">
+              <li class="nav-item w-100">
+                <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex ">
+                  <input type="text" class="form-control" placeholder="Fxc7 APIs">
+                </form>
+              </li>
+            </ul>
+            <ul class="navbar-nav navbar-nav-right">
+              <li class="nav-item nav-settings d-none d-lg-block">
+                <a class="nav-link" href="#">
+                  <i class="mdi mdi-view-grid"></i>
+                </a>
+              </li>
+              <li class="nav-item dropdown border-left">
+                <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
+                  <i class="mdi mdi-bell"></i>
+                  <span class="count bg-danger"></span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+                  <h6 class="p-3 mb-0">Info New Update</h6>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-calendar text-success"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Change Template</p>
+                      <p class="text-muted ellipsis mb-0"> Cuman Minta Template doang bang :v </p>
+                    </div>
+                  </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
+                  <div class="navbar-profile">
+                    <img class="img-xs rounded-circle" src="https://i.ibb.co/YDYS80p/zero.jpg" alt="">
+                    <p class="mb-0 d-none d-sm-block navbar-profile-name">Zero YT7</p>
                   </div>
-
+                </a>
+              </li>
+            </ul>
+            <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+              <span class="mdi mdi-format-line-spacing"></span>
+            </button>
+          </div>
+        </nav>
+        <div class="main-panel">
+          <div class="content-wrapper">
+            <div class="row">
+              <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="font-weight-bold text-danger text-uppercase">IP Address</h5>
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="d-flex align-items-center align-self-start">
+                          <h3 class="mb-0" id="ip">Waiting...</h3>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="icon icon-box-success">
+                          <span class="mdi mdi-access-point-network icon-item"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <font face="Original Surfer" class="text-muted font-weight-normal">Your IP Address</font>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h6 class="font-weight-bold text-info text-uppercase">Your Battery</h6>
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="d-flex align-items-center align-self-start">
+                        	<span id="batteryLevel"></span>
+                          <h3 class="mb-0" id="percentageLevel">Waiting...</h3>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="icon icon-box-success ">
+                          <span class="mdi mdi-battery-positive"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <font face="Original Surfer" class="text-muted font-weight-normal">Percentase Your Battery</font>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="font-weight-bold text-success text-uppercase">Visitor</h5>
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="d-flex align-items-center align-self-start">
+                          <h3 class="mb-0" id="visits">Waiting...</h3>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="icon icon-box-success ">
+                          <span class="mdi mdi-eye icon-item"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <font face="Original Surfer" class="text-muted font-weight-normal">Visit Web</font>
+                  </div>
+                </div>
+              </div>
+            <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="font-weight-bold text-info text-uppercase">Date</h5>
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="d-flex align-items-center align-self-start">
+                          <h4 class="mb-0" id="tanggal">Waiting...</h4>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="icon icon-box-success ">
+                          <span class="mdi mdi-calendar icon-item"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <font face="Original Surfer" class="text-muted font-weight-normal">Date Now</font>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="font-weight-bold text-success text-uppercase">Clock</h5>
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="d-flex align-items-center align-self-start">
+                          <h4 class="mb-0" id="Clock">Waiting...</h4>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="icon icon-box-success ">
+                          <span class="mdi mdi-clock icon-item"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <font face="Original Surfer" class="text-muted font-weight-normal" id="Ucapan">Ucapan</font>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h6 class="font-weight-bold text-info text-uppercase">Road To Idul Adha</h6>
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="d-flex align-items-center align-self-start">
+                          <h5 class="mb-0" id="IdulAdha">Waiting...</h5>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="icon icon-box-success ">
+                          <span class="mdi mdi-star icon-item"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <font face="Original Surfer" class="text-muted font-weight-normal">Menuju Idul Adha</font>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-12">
-              <div class="card mb-4">
+            <form action="/api/cekapikey">
+              <div class="card card-round mt-5 stretch-card grid-margin">
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-danger">Support kalian ke aku.</h6>
+                  <h4 class="m-0 font-weight-bold text-warning"><i <h4>CEK APIKEY</h4>
                 </div>
-                <div class="card-body">
-                  <p>support kalian
-                    <code>.donasi-kalian</code> ke <code>.dompet-aku</code></p>
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar"
-                      aria-valuenow="3" aria-valuemin="0" aria-valuemax="100" style="width: 3%"></div>
+               <div class="card-body">
+                 <p class="status" style="font-size: 17px;"></p>
+                   <div class="form-group">
+                     <input class="form-control font-weight-bold text-center" type="text" placeholder="Masukkan Apikey" name="apikey" required>
+                   </div>
+                   <div class="form-group"><center>
+                     <button type="submit" class="btn btn-primary content-justify-center"><i class="mdi mdi-arrow-right-bold-hexagon-outline"></i> <span class="font-weight-bold"> Submit</span></button></center>
+                   </div>
+               </div>
+             </div>
+            </form>
+<ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-gw-3+1f-3d+2z" data-ad-client="ca-pub-5404310597803049" data-ad-slot="6657550061"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+            <div class="row">
+              <div class="col-md-6 col-xl-4 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="mt-3 btn btn-outline-danger bg-transparent">
+                    <div id="demo" class="alert btn btn-outline-danger" role="alert">
+                      <span id="Statistic">Waiting...</span>
+                    </div>
                   </div>
-
+                  </div>
                 </div>
               </div>
-            </div> --->
-
-            <!--- <div class="col-lg-12">
-              <div class="card mb-4">
-                <div class="card-body">
-                  <form>
-                    <div class="form-group">
-                      <label for="exampleFormControlTextarea1">Your message</label>
-                      <textarea class="form-control" name="text" id="text" rows="3"></textarea>
-                      <small id="emailHelp" class="form-text text-muted">Chat langsung to the point aja! Fast respon kok :)</small>
-                      </div>
-                    <div class="form-group">
-                    </div>
-                    <div class="text-center">
-                      <button type="submit" class="btn btn-gradient-warning" id="send"><i class="fab fa-fw fa-whatsapp"></i>&nbsp;WhatsApp</button>
-                    </div>
-                  </form>
-                </div>
+          <footer class="footer">
+            <div class="d-sm-flex justify-content-center justify-content-sm-between">
+              <div class="bg-dark btn btn-block btn-outline-danger">
+                <font face="Original Surfer" class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © <span id="Years">00</span> Sekha</font>
               </div>
-            </div> --->
-
-        <!---Container Fluid-->
-		
-      <!-- Footer -->
-      <footer class="sticky-footer bg-warning">
-        <div class="container my-auto">
-          <div class="copyright text-center my-auto">
-            <span class="text-white">copyright &copy; <script>document.write(new Date().getFullYear());</script> -<b><a class="text-white" href="https://instagram.com/_sekhaa" target="_blank"> Rey</a></b></span>
-          </div>
+            </div>
+          </footer>
         </div>
-      </footer>
-      <!-- Footer -->
+      </div>
     </div>
-
-  <!-- Scroll to top -->
-  <a class="scroll-to-top rounded" href="#page-top">
-    <i class="fas fa-angle-up"></i>
-  </a>
-
-  <script src="https://indrijunanda.github.io/RuangAdmin/vendor/jquery/jquery.min.js"></script>
-  <script src="https://indrijunanda.github.io/RuangAdmin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="https://indrijunanda.github.io/RuangAdmin/vendor/jquery-easing/jquery.easing.min.js"></script>
-  <script src="https://indrijunanda.github.io/RuangAdmin/js/ruang-admin.min.js"></script>
-
-
-</body>
-
-</html>
+    <script>
+      swal({
+        title: 'Konichiwa',
+        text: 'Have fun :)',
+        imageUrl: 'https://i.pinimg.com/736x/79/c9/b8/79c9b86d37c70a73ff82b236fbb1c40f.jpg',
+        imageWidth: 200,
+        imageHeight: 200,
+        imageAlt: 'Danu',
+        animation: true
+      })
+    </script>
+			<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>   
+    <script src="vendors/js/vendor.bundle.base.js"></script>
+    <script src="vendors/owl-carousel-2/owl.carousel.min.js"></script>
+    <script src="js/off-canvas.js"></script>
+    <script src="js/hoverable-collapse.js"></script>
+    <script src="js/misc.js"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/todolist.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/ojan.js"></script>
+  </html>
