@@ -801,33 +801,6 @@ router.get('/download/apkdl', async(req, res, next) => {
 }
 })
 
-router.get('/download/soundcloud/play', async(req, res, next) => {
-  const apikey = req.query.apikey;
-  const query = req.query.query;
-  
-  if(!query) return res.json(loghandler.notquery)
-  if(!apikey) return res.json(loghandler.notparam)
-  
-  if(listkey.includes(apikey)){
-    fetch(encodeURI(`https://hadi-api.herokuapp.com/api/soundcloud/play?query=${query}`))
-    .then(response => response.json())
-        .then(hasil => {
-
-        var result = hasil.result;
-             res.json({
-                 status : true,
-                 creator : `${creator}`,
-                 result
-             })
-         })
-         .catch(e => {
-         	res.json(loghandler.error)
-})
-} else {
-  res.json(loghandler.invalidKey)
-}
-})
-
 router.get('/download/apk', async(req, res, next) => {
   const apikey = req.query.apikey;
   const query = req.query.query;
@@ -1457,7 +1430,7 @@ router.get('/downloader/facebook2', async(req, res, next) => {
   if(!apikey) return res.json(loghandler.notparam)
   
   if(listkey.includes(apikey)){
-    fetch(encodeURI(`https://api.neoxr.eu.org/api/fb?url=${url}&apikey=yourkey`))
+    fetch(encodeURI(`https://api-xcoders.xyz/api/download/fb?url=${url}&apikey=UW8wc3KPy0`))
     .then(response => response.json())
         .then(hasil => {
 
@@ -1484,7 +1457,7 @@ router.get('/downloader/facebook', async(req, res, next) => {
   if(!apikey) return res.json(loghandler.notparam)
   
   if(listkey.includes(apikey)){
-    fetch(encodeURI(`https://api.neoxr.eu.org/api/fb?url=${url}&apikey=yourkey`))
+    fetch(encodeURI(`https://api-xcoders.xyz/api/download/fb?url=${url}&apikey=UW8wc3KPy0`))
     .then(response => response.json())
         .then(hasil => {
 
@@ -7450,7 +7423,7 @@ router.get('/cekapikey', async(req, res, next) => {
       status: 'active',
       creator: `${creator}`,
       apikey: `${apikey}`,
-      message: 'APIKEY ACTIVE LIMIT 999'    
+      message: 'APIKEY ACTIVE LIMIT 99999'    
     })
   } else {
     res.json(loghandler.invalidKey)
