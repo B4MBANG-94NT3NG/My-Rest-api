@@ -482,6 +482,33 @@ router.get('/music/spotify', async(req, res, next) => {
   res.json(loghandler.invalidKey)
 }
 })
+
+router.get('/download/soundclound/play', async(req, res, next) => {
+  const apikey = req.query.apikey;
+  const query = req.query.query;
+  if(!apikey) return res.json(loghandler.notparam)
+  if(!query) return res.json(loghandler.notquery)
+  
+  if(listkey.includes(apikey)){
+  fetch(encodeURI(`https://hadi-api.herokuapp.com/api/soundcloud/play?query=${query}`))
+  .then(response => response.json())
+        .then(hasil => {
+
+        var result = hasil.result;
+             res.json({
+                 status : true,
+                 creator : `${creator}`,
+                 result
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+} else {
+  res.json(loghandler.invalidKey)
+}
+})
+
 router.get('/download/ytmp3', async(req, res, next) => {
   const url = req.query.url;
   const apikey = req.query.apikey;
