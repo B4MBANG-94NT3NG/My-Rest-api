@@ -2351,18 +2351,34 @@ router.get('/search/image', async(req, res, next) => {
 })
 
 
-
-router.get('/nsfw/ahegao', async (req, res, next) => {
+router.get('/nsfw/blowjob', async (req, res, next) => {
         var Apikey = req.query.apikey
             
 	if(!Apikey) return res.json(loghandler.notparam)
 	if(listkey.includes(Apikey)){
 
-  const ahegao = JSON.parse(fs.readFileSync(__path +'/data/ahegao.json'));
-  const randahegao = ahegao[Math.floor(Math.random() * ahegao.length)];
-  data = await fetch(randahegao).then(v => v.buffer())
-  await fs.writeFileSync(__path +'/tmp/ahegao.jpeg', data)
-  res.sendFile(__path +'/tmp/ahegao.jpeg')
+  const blowjob = JSON.parse(fs.readFileSync(__path +'/data/blowjob.json'));
+  const randblowjob = blowjob[Math.floor(Math.random() * blowjob.length)];
+  data = await fetch(randblowjob).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/blowjob.jpeg', data)
+  res.sendFile(__path +'/tmp/blowjob.jpeg')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+//ASUPAN COKKK
+
+router.get('/asupan/lifana', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const lifana = JSON.parse(fs.readFileSync(__path +'/data/lifana.json'));
+  const randlifana = lifana[Math.floor(Math.random() * lifana.length)];
+  data = await fetch(randlifana).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/lifana.jpeg', data)
+  res.sendFile(__path +'/tmp/lifana.jpeg')
 } else {
 res.json(loghandler.invalidKey)
 }
