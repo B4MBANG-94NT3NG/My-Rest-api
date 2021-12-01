@@ -2368,6 +2368,38 @@ res.json(loghandler.invalidKey)
 })
 //ASUPAN COKKK
 
+router.get('/asupan/bocil', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const bocil = JSON.parse(fs.readFileSync(__path +'/data/bocil.json'));
+  const randbocil = bocil[Math.floor(Math.random() * bocil.length)];
+  data = await fetch(randbocil).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/bocil.mp4', data)
+  res.sendFile(__path +'/tmp/bocil.mp4')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
+router.get('/asupan/santuy', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const santuy = JSON.parse(fs.readFileSync(__path +'/data/santuy.json'));
+  const randsantuy = santuy[Math.floor(Math.random() * santuy.length)];
+  data = await fetch(randsantuy).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/santuy.mp4', data)
+  res.sendFile(__path +'/tmp/santuy.mp4')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
 router.get('/asupan/lifana', async (req, res, next) => {
         var Apikey = req.query.apikey
             
