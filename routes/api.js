@@ -2368,6 +2368,22 @@ res.json(loghandler.invalidKey)
 })
 //ASUPAN COKKK
 
+router.get('/asupan/bokep', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.json(loghandler.notparam)
+	if(listkey.includes(Apikey)){
+
+  const bokep = JSON.parse(fs.readFileSync(__path +'/data/bokep.json'));
+  const randbokep = bokep[Math.floor(Math.random() * bokep.length)];
+  data = await fetch(randbokep).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/bokep.mp4', data)
+  res.sendFile(__path +'/tmp/bokep.mp4')
+} else {
+res.json(loghandler.invalidKey)
+}
+})
+
 router.get('/asupan/lifana2', async (req, res, next) => {
         var Apikey = req.query.apikey
             
