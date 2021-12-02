@@ -2375,10 +2375,10 @@ router.get('/asupan/lifana2', async (req, res, next) => {
 	if(listkey.includes(Apikey)){
 
   const lifana = JSON.parse(fs.readFileSync(__path +'/data/lifana2.json'));
-  const randlifana2 = lifana[Math.floor(Math.random() * lifana.length)];
-  data = await fetch(randlifana2).then(v => v.buffer())
-  await fs.writeFileSync(__path +'/tmp/lifana2.mp4', data)
-  res.sendFile(__path +'/tmp/lifana2.mp4')
+  const randlifana = lifana[Math.floor(Math.random() * lifana.length)];
+  data = await fetch(randlifana).then(v => v.buffer())
+  await fs.writeFileSync(__path +'/tmp/lifana.mp4', data)
+  res.sendFile(__path +'/tmp/lifana.mp4')
 } else {
 res.json(loghandler.invalidKey)
 }
