@@ -3,15 +3,12 @@ var favicon = require('serve-favicon');
 var express = require('express');
 var db = require(__path + '/database/db');
 try {
-var zahirr = db.get("zahirr");
+var reyganz = db.get("reyganz");
 } catch (e) {
 	console.log('')  
 }
  
 var creator = "Rey"
-var neoxr = "yntkts"
-var zeks = "administrator"
-var zeks2 = "apivinz"
 var secure = require('ssl-express-www');
 var cors = require('cors');
 var fetch = require('node-fetch');
