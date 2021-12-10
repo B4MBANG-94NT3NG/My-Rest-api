@@ -3,9 +3,9 @@ var __path = process.cwd(),
      { color } = require(__path + '/lib/color.js')
 
 // Connection URL
-var url = 'https://reysekha.space';
+var url = 'https://reysekha.xyz';
 try {
-if(url == 'https://reysekha.space') throw console.log(color('Cek konfigurasi database, var url belum diisi','red'));
+if(url == 'https://reysekha.xyz') throw console.log(color('Cek konfigurasi database, var url belum diisi','red'));
 } catch (e) {
 	return;
 	}
