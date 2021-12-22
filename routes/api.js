@@ -1521,8 +1521,9 @@ router.get('/downloader/facebook', async(req, res, next) => {
 }
 })
 
-router.get('/fbdl', async(req, res) => {
+router.get('/fbdl', async(req, res, next) => {
 	var link = req.query.link
+        var apikey = req.query.apikey;
 	if (!link) return res.json({ message: 'masukan parameter Link' })
 	var hasil = await dl(link)
 	try {
@@ -1540,7 +1541,7 @@ router.get('/downloader/fb2', async (req, res, next) => {
             
 	if(!Apikey) return res.json(loghandler.notparam)
 	if(listkey.includes(Apikey)){
-    if (!url) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter url"})
+       if (!url) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter url"})
 
        FB(url)
        .then((data) => {
