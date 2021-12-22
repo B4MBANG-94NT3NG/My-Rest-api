@@ -21,6 +21,7 @@ var TikTokScraper = require('tiktok-scraper');
 var { EmojiAPI } = require("emoji-api");
 var emoji = new EmojiAPI();
 var router  = express.Router();
+var { dl } = require('../lib/aiovideodl.js')
 var { TiktokDownloader } = require('../lib/tiktokdl.js')
 var { color, bgcolor } = require(__path + '/lib/color.js');
 var { fetchJson } = require(__path + '/lib/fetcher.js');
@@ -1518,6 +1519,18 @@ router.get('/downloader/facebook', async(req, res, next) => {
 } else {
   res.json(loghandler.invalidKey)
 }
+})
+
+router.get('/fbdl', async(req, res) => {
+	var link = req.query.link
+	if (!link) return res.json({ message: 'masukan parameter Link' })
+	var hasil = await dl(link)
+	try {
+		res.json(hasil)
+	} catch(err) {
+		console.log(err)
+		res.json({ message: 'Ups, error' })
+	}
 })
 
 router.get('/downloader/fb2', async (req, res, next) => {
